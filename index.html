@@ -8,19 +8,27 @@
     <title>Shreyas</title>
 </head>
 <body>
-    <nav class="custom-nav">
-        <div class="about-nav-container">
-            <a class="navbar-brand" href="#home">Home</a>
-            <a class="navbar-brand" href="#about">About</a>
-            <a class="navbar-brand" href="#education">Education</a>
-            <a class="navbar-brand" href="#skills">Skills</a>
-            <a class="navbar-brand" href="#work-ex">Work Experience</a>
-            <a class="navbar-brand" href="#other">Activities</a>
-            <a class="navbar-brand" href="#contact">Contact</a>
-                    <!-- Add your About Section links here -->
-                    <!-- Example: <a class="nav-link" href="#section-id">Section</a> -->
+        <div class="collapse-nav">
+                <a class="about-nav" href="#home">Home</a>
+                <a class="about-nav" href="#about">About</a>
+                <a class="about-nav" href="#education">Education</a>
+                <a class="about-nav" href="#skills">Skills</a>
+                <a class="about-nav" href="#work-ex">Work Experience</a>
+                <a class="about-nav" href="#other">Activities</a>
+                <a class="about-nav" href="#contact">Contact</a>
+            <div class="navbar-btn" onclick="toggleNavbar()">☰</div>
+            <div class="collapse-nav vertical">
+                <div class="navbar-btn" onclick="toggleNavbar()">☰</div>
+                <a class="about-nav" href="#home">Home</a>
+                <a class="about-nav" href="#about">About</a>
+                <a class="about-nav" href="#education">Education</a>
+                <a class="about-nav" href="#skills">Skills</a>
+                <a class="about-nav" href="#work-ex">Work Experience</a>
+                <a class="about-nav" href="#other">Activities</a>
+                <a class="about-nav" href="#contact">Contact</a>
+            </div>
         </div>
-    </nav>
+
 <!--    HOME SECTION-->
     
     <section class="home" id="home">
@@ -35,23 +43,33 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
+        <div class="main-navbar-btn" onclick="maintoggleNavbar()">☰</div>
+        <div class="main-nav-vertical">
+            
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#work-ex">Work Experience</a>
+                <a href="#other">Activities</a>
+                <a href="#contact">Contact</a>
+        </div>
     
     
     <div class="heading-container">
     <h3>Hello I'm</h3>
     <h1>Shreyas</h1>
-        <a href="SHREYAS_RAJ_RESUME.pdf"><button type="button" class="btn btn-danger main-button">RESUME</button></a>
-        <a href="#contact"><button type="button" class="btn btn-dark main-button" >CONTACT</button></a>
+        <a class="heading-btn" href="SHREYAS_RAJ_RESUME.pdf"><button type="button" class="btn btn-danger main-button">RESUME</button></a>
+        <a class="heading-btn" href="#contact"><button type="button" class="btn btn-dark main-button" >CONTACT</button></a>
     </div>
     <div class="main_img">
-        <img src="images/shreyas_bg2.png">
+        <img src="images/LinkedIn-removebg.png">
     </div>
     </div>
     </section>
     
 <!--    ABOUT SECTION-->
     
-    <section id="about",class="about">
+    <section id="about" class="about">
         
         <div class="about-container">
             
@@ -65,13 +83,15 @@
 <!--    EDUCATION SECTION-->
     
     
-    <section id="education", class="education">
+    <section id="education" class="education">
         <div class="education-container">
             <h1>Education</h1>
             <div class="education-list">
                 <div class="school">
-                    <h3>Elementary School</h3>
-                    <h6>Manthan Vidyashram(2018)</h6>
+                    <div class="school-head">
+                        <h3>Elementary School</h3>
+                        <h6>Manthan Vidyashram(2018)</h6>
+                    </div>
                     <div class="school-info">
                         <ul>85% in 10th IGCSE board exams</ul>
                         <ul>Captain of school cricket team</ul>
@@ -80,8 +100,10 @@
                     </div>
                 </div>
                 <div class="school">
-                    <h3>High School</h3>
-                    <h6>Hindu Senior Secondary School(2018-20)</h6>
+                    <div class="school-head">
+                        <h3>High School</h3>
+                        <h6>Hindu Senior Secondary School(2018-20)</h6>
+                    </div>
                     <div class="school-info">
                         <ul>96%(480/500) in 12th CBSE board exams</ul>
                         <ul>Studied computer science with math, physics, chemistry and english</ul>
@@ -91,8 +113,10 @@
                     </div>
                 </div>
                 <div class="school">
-                    <h3>Undergrad</h3>
-                    <h6>Hindustan University(2020-23)</h6>
+                    <div class="school-head">
+                        <h3>Undergrad</h3>
+                        <h6>Hindustan University(2020-23)</h6>
+                    </div>
                     <div class="school-info">
                         <ul>Completed Bachelors of Business Administration</ul>
                         <ul>Completed degree without any arrears</ul>
@@ -107,7 +131,7 @@
 <!--    SKILLS SECTION-->
     
     
-    <section id="skills", class="skills">
+    <section id="skills" class="skills">
         <div class="skills-container">
             <h1>SKILLS</h1>
             <div class="skill-list">
@@ -186,7 +210,7 @@
 <!--    WORK EXPERIENCE SECTION-->
     
     
-    <section id="work-ex",class="work">
+    <section id="work-ex" class="work">
         <div class="work-container">
             <h1>Work Experience</h1>
             <div class="timeline-container">
@@ -235,7 +259,7 @@
 <!--    OTHER SECTION-->
     
     
-    <section id="other",class="other">
+    <section id="other" class="other">
     <div class="other-container">
         <h1>Activities</h1> 
         <div class="activity">

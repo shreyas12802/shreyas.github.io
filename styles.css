@@ -7,9 +7,60 @@ body {
     margin: 0;
     padding: 0;
 }
-.custom-nav {
-    display: none;
-}
+
+
+/*FIXED NAVBAR*/
+
+
+.collapse-nav {
+      background-color: #333;
+      padding: 10px;
+      color: white;
+      position: fixed;
+      width: 100%;
+      top: -100px;
+      transition: top 0.3s;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .collapse-nav a {
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .collapse-nav a:hover {
+      color: black;
+    }
+
+    .collapse-nav.vertical {
+      display: none;
+      flex-direction: column;
+      position: fixed;
+      top: 0%;
+    }
+
+    .collapse-nav.vertical a {
+      text-align: left;
+      width: 100%;
+      box-sizing: border-box;
+      
+    }
+
+    .navbar-btn {
+      display: none;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+   
+        
+/*    HOME SECTION*/
+        
+        
 .home {
     background-color: aqua;
     margin: 0;
@@ -53,11 +104,15 @@ body {
     position: absolute;
     bottom: 0;
     right: 5%;
+    text-align: right;
 /*    transform: translateY(-50%);*/
 }
-
 img {
     width: 80%;
+    height: auto;
+}
+.main_img img {
+    width: 40%;
     height: auto;
 }
 .main-button {
@@ -76,6 +131,10 @@ img {
     background-color: white;
     border-radius: 25px 25px 0 0 ;
     
+}
+.main-nav-vertical {
+    display: none;
+    z-index: 1000;
 }
 .navbar-main ul{
     list-style: none;
@@ -101,6 +160,9 @@ img {
 .navbar-main a:hover {
     color: darkgrey;
 }
+main-navbar-btn {
+    display: none;
+}
 
 /*ABOUT SECTION*/
 
@@ -115,17 +177,20 @@ img {
     position: absolute;
     top: 20%;
     left: 5%;
+    font-size: 4vw;
 }
 .about-container h3 {
     position: absolute;
     top: 40%;
     left: 5%;
+    font-size: 2vw;
 }
 .about-container p {
     position: absolute;
     top: 50%;
     left: 5%;
     right: 40%;
+    font-size: 1vw;
 }
 .custom-nav {
     width: 100%; 
@@ -184,10 +249,15 @@ img {
 }
 .school h3 {
     text-align: center;
+    font-size: 2vw;
 }
 .school h6 {
     margin: 20px 0;
     text-align: center;
+    font-size: 1.5vw;
+}
+.school ul {
+    font-size: 1vw;
 }
 
 
@@ -369,6 +439,7 @@ img {
     width: 40%;
     right: 0;
 }
+
 .com {
     width: 90%;
     background-color:red;
@@ -615,7 +686,7 @@ img {
     height: 85%;
     position: absolute;
     right: 0;
-    top: 15%;
+    top: 5%;
 }
 .cricket {
     height: 30%;
@@ -696,3 +767,137 @@ img {
 .contact-details p{
     margin-left: 10%;
 }
+
+
+
+/*SMALLER SCREEN SIZE*/
+
+
+ @media screen and (max-width: 800px) {
+      .collapse-nav a, .navbar-btn {
+        display: none;
+      }
+      .navbar-btn {
+        display: block;
+      }
+      .collapse-nav.vertical {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        overflow-x: hidden;
+        padding-top: 60px;
+      }
+      .collapse-nav.vertical a {
+        display: block;
+      }
+
+      .collapse-nav.vertical.show {
+        display: flex;
+    }
+    
+     .main-navbar-btn {
+         display: block;
+         text-align: right;
+         padding: 10px;
+     }
+     .navbar-main {
+         display: none;
+     }
+     .main-nav-vertical {
+         display: none;
+         position: relative;
+         z-index: 1000;
+     }
+     .main-nav-vertical a{
+         display: block;
+/*         width: 100%;*/
+         text-decoration: none;
+         background-color: black;
+         color: white;
+         padding: 10px;
+         
+     }
+     .heading-container {
+         position: absolute;
+         z-index: 0;
+     }
+     .main_img {
+         display: none;
+     }
+     .heading-container {
+         width: 100%;
+         left: 0;
+         text-align: center;  
+     }
+     
+     .about-container h1 {
+        font-size: 6vw;
+    }
+    .about-container h3 {
+        font-size: 4vw;
+        left: 5%;
+        padding: 0;
+        margin: 0;
+    }
+    .about-container p {
+        font-size: 2vw;
+        left: 5%;
+        right: 5%;
+    }
+ 
+    .education-list {
+        top: 15%;
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+    .school {
+        width: 95%;
+        padding: 0;
+        display: flex;
+        flex-flow: column;
+        flex-direction: row;
+        align-items: center;
+    }
+     .school-head {
+         width: 35%;
+         height: 100%;
+     }
+    .school-head h3 {
+        height: 50%;
+        
+        text-align: center;
+        font-size: 2vw;
+    }
+    .school-head h6 {
+        height: 50%;
+        text-align: center;
+        font-size: 1.5vw;
+    }
+    .school ul {
+        font-size: 1.5vw;
+        margin: 5px;
+    }
+     .computer-skills {
+         font-size: 1.5vw;
+     }
+     .soft-skills p{
+        font-size: 1.5vw;
+     }
+     .work-container h6{
+         font-size: 2vw;
+     }
+     .work-container div {
+         font-size: 1vw;
+     }
+     .contact-container h1 {
+         left: 0;
+         right: 0;
+         top: 10%;
+         text-align: center;
+     }
+}
+        
