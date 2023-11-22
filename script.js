@@ -11,16 +11,21 @@ function scrollFunction() {
         navbar.style.top = "-100px";
     }
 }
-function toggleNavbar() {
-    const verticalNavbar = document.querySelector('.collapse-nav.vertical');
-    verticalNavbar.classList.toggle('show');
-  }
 
 function maintoggleNavbar() {
     const verticalNavbar = document.querySelector('.main-nav-vertical');
     verticalNavbar.style.display = verticalNavbar.style.display === 'block' ? 'none' : 'block';
-//    verticalNavbar.classList.toggle('show');
-//    if (verticalNavbar.style.display="none")
-//    {verticalNavbar.style.display="block";}
-//    else if (verticalNavbar.style.display="block") {verticalNavbar.style.display="none";}
+}
+
+function a_click() {
+    const verticalNavbar = document.querySelector('.collapse-nav.vertical');
+    verticalNavbar.style.display = "none";
+}
+function toggleNavbar() {
+    const verticalNavbar = document.querySelector('.collapse-nav.vertical');
+    verticalNavbar.style.display = verticalNavbar.style.display === 'block' ? 'none' : 'block';
+  }
+function a_main_click() {
+    const verticalNavbar = document.querySelector('.main-nav-vertical');
+    verticalNavbar.style.display = "none";
 }
