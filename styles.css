@@ -958,6 +958,82 @@ main-navbar-btn {
     .computer-skills {
         margin: 10% auto
     }
+    .excel {
+    width: 90%;
+    border: 2px solid red;
+    position: relative;
+    }
+    .word {
+    width: 95%;
+    border: 2px solid dodgerblue;
+    position: relative;
+    }
+    .powerpoint {
+    width: 95%;
+    border: 2px solid greenyellow;
+    position: relative;
+    }
+    .sql {
+    width: 60%;
+    border: 2px solid orange;
+    position: relative;
+    }
+    .html {
+    width: 85%;
+    border: 2px solid fuchsia;
+    position: relative;
+    }
+    .css {
+    width: 80%;
+    border: 2px solid firebrick;
+    position: relative;
+    }
+    .js {
+    width: 50%;
+    border: 2px solid black;
+    position: relative;
+    }
+    .python {
+    width: 80%;
+    border: 2px solid blueviolet;
+    position: relative;
+    }
+    .com {
+    width: 90%;
+    border: 2px solid red;
+    position: relative;
+    }
+    .ps {
+    width: 90%;
+    border: 2px solid dodgerblue;
+    position: relative;
+    }
+    .tp {
+    width: 95%;
+    border: 2px solid greenyellow;
+    position: relative;
+    }
+
+    .adap {
+    width: 90%;
+    border: 2px solid orange;
+    position: relative;
+    }
+    .crea {
+    width: 80%;
+    border: 2px solid fuchsia;
+    position: relative;
+    }
+    .ma {
+    width: 100%;
+    border: 2px solid firebrick;
+    position: relative;
+    }
+    .is {
+    width: 90%;
+    border: 2px solid black;
+    position: relative;
+    }
     .soft-skills {
         margin: 10% auto;
     }
@@ -975,8 +1051,7 @@ main-navbar-btn {
         display: flex;
         flex-direction: row;
         flex-flow: column;
-        align-items: center;
-        
+        align-items: center;    
     }
     .work2 {
         top: 50%;
@@ -994,19 +1069,6 @@ main-navbar-btn {
         font-size: 1.5vw;
     }
     
-    .activity{
-/*
-        height: 80%;
-        width: 90%;
-        margin: auto;
-        top: 20%;
-        left: 0;
-        display: flex;
-        flex-flow: column;
-        flex-direction: row;
-*/
-        
-    }
     .other{
         display: none;
     }
